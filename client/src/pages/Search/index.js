@@ -65,7 +65,7 @@ class Search extends Component {
                                                 synopsis={book.volumeInfo.description ?
                                                     book.volumeInfo.description : "No Description Available"}
                                                 link={book.volumeInfo.infoLink}
-                                                thumbnail={book.volumeInfo.imageLinks.thumbnail ?
+                                                thumbnail={book.volumeInfo.hasOwnProperty('imageLinks') ?
                                                     book.volumeInfo.imageLinks.thumbnail : "#"}
                                             />
 
@@ -75,7 +75,7 @@ class Search extends Component {
                                                 synopsis={book.volumeInfo.description ?
                                                     book.volumeInfo.description : "No Description Available"}
                                                 link={book.volumeInfo.infoLink}
-                                                thumbnail={book.volumeInfo.imageLinks.thumbnail ?
+                                                thumbnail={book.volumeInfo.hasOwnProperty('imageLinks') ?
                                                     book.volumeInfo.imageLinks.thumbnail : "#"}
 
                                             />
